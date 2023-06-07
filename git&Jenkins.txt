@@ -1,0 +1,192 @@
+Steps to push the code in GITHUB
+==================================
+step1:
+-----
+	create a remote repository in GITHUB.
+	ex:
+	https://github.com/NiyazulHasan/IH-JAVA-016	
+
+
+step2:
+-------
+	Download and install git software.
+	ex:
+		https://git-scm.com/downloads
+
+step2:
+-------
+	Create a Training folder inside any drive.
+
+step3:
+-----
+	Copy and paste the project inside training folder.
+	
+
+step4:
+------
+	Open a bash  from "Training" folder.
+	ex:
+		right click inside "Training" folder--> Git Bash Here.
+
+step5:
+------
+	Initialized empty Git repository.
+	ex:
+		bash> git init
+
+
+step6:
+-----
+	See the current branch name of local repository .
+	ex:
+		bash> git branch
+
+step7:
+----
+	Move from master branch to main branch.
+	ex:
+		bash> git branch --move master main
+
+step8:
+-----
+	Up stream the main branch.
+	ex:
+		bash> git push --set-upstream origin main
+
+
+step9:
+-----
+	To check the status in git.
+	ex:
+		bash> git status
+step10:
+-------
+	Add the folders and files to commit.
+	ex:
+		bash> git add .
+		
+step11:
+------
+	Again check the status in git.
+	ex:
+		bash> git status
+
+step12:
+--------
+	commit the files into master branch.
+	ex:
+		bash> git commit -m "My Project Code"
+
+step13:
+--------
+	add remote origin to git.
+	ex:
+	bash> git remote add origin https://github.com/NiyazulHasan/IH-JAVA-016
+
+step14:
+-------
+	push the project to master branch.
+	ex:
+		bash> git push origin main
+		or
+		bash> git push -f origin main
+
+step15:
+--------
+	Goto github reposority and represent the web page
+	ex:
+		https://github.com/NiyazulHasan/IH-JAVA-016
+
+
+step16:
+------
+	We can clone the project by using below command.
+	ex:
+		bash> git clone  https://github.com/NiyazulHasan/ih-java-016
+
+
+
+
+Jenkins 
+=============
+Jenkins is an open-source continuous integration software tool written in the Java programming language for testing and reporting on isolated changes in a larger code base in real time. The software enables developers to find and solve defects in a code base rapidly and to automate testing of their builds.
+
+
+step1:
+-------
+	Download and Install JDK 11 for Jenkins.
+	ex:
+		https://www.codejava.net/java-se/download-and-install-java-11-openjdk-and-oracle-jdk
+
+	
+
+step2:
+--------
+	Download the Jenkins.
+	ex:
+		https://www.jenkins.io/download/
+
+step3:
+-------
+	Install the jenkins for windows OS.
+	ex:
+		Double click to Jenkins softwawre --> next --> next --> select on
+		"Run service as LocalSystem" --> next --> port no: 8181--> 
+		click on "Test port" --> next--> 
+		Select java JDK location (C:\Program Files\Java\jdk-11\) --> Next
+		---> Next --> Install --> Yes (popup) --> Finish. 
+	
+	
+step4:
+-----
+	Now types below request url in browser address bar to start the jenkins.
+	ex:
+		http://localhost:8181
+
+step5:
+-----
+	Now copy and paste below directory in c drive and click on open with notepad.
+	
+	ex:
+		C:\ProgramData\Jenkins\.jenkins\secrets\initialAdminPassword
+
+
+		password : 753802253a2648a6af59d2cb089c3de5 --> continue -->
+		select install suggested plugin --> click on continue -->
+
+		username : jenkins
+		password : jenkins143786
+		confirm password : jenkins143786
+		fullname : jenkins
+		email : niyazulhasan61@gmail.com ---> save and continue -->
+		starts using jenkins.
+
+
+step6:
+-----
+	Click to create a job in jenkins.
+	
+	Enter the item name : IH-JAVA-015  ---> select free style project -->
+	->ok  --> description:  simple jenkins demostration  --> Build steps -->
+	Execution windows batch command : java -version
+                                          dir 
+	--> save .
+
+
+
+step7:
+------
+	Build the job.
+	ex:	
+		click on buildnow.
+
+
+
+	
+
+
+
+
+
+
+	 
